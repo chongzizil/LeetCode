@@ -1,4 +1,4 @@
-package com.li.zil.leetcode;
+package com.li.zil.leetcode.datastructure;
 
 /**
  * Created by Zil on 2014/7/22.

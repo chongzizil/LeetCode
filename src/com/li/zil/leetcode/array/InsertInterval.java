@@ -5,6 +5,9 @@ import com.li.zil.leetcode.datastructure.Interval;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * This is a O(n) solution and use O(n) space... It's a brilliant idea, yet not mine...
+ */
 public class InsertInterval {
 	public List<Interval> insert(List<Interval> intervals, Interval newInterval) {
 		List<Interval> res = new ArrayList<Interval>();

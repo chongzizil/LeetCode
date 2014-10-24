@@ -1,10 +1,12 @@
-package com.li.zil.leetcode;
+package com.li.zil.leetcode.DP;
 
 /**
- * For more reference: http://cs.lmu.edu/~ray/notes/binarytrees/
+ * For more reference:
+ * http://cs.lmu.edu/~ray/notes/binarytrees/
+ * http://www.geeksforgeeks.org/program-nth-catalan-number/
  */
 public class UniqueBinarySearchTrees {
-	// Method 1
+	// Method 1 (DP)
 	public int numTrees1(int n) {
 		int[] number = new int[n + 1];
 		number[0] = 1;

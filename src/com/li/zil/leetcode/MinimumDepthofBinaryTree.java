@@ -1,5 +1,7 @@
 package com.li.zil.leetcode;
 
+import com.li.zil.leetcode.datastructure.TreeNode;
+
 /**
  * Created by Zil on 2014/8/10.
  */

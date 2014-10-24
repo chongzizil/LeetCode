@@ -4,12 +4,11 @@ package com.li.zil.leetcode;
  * Created by Zil on 2014/8/7.
  */
 public class SetMatrixZeroes {
-
 	// First check if there are any zeros in first row and column. Then traverse all the element
 	// except in first row and column, if element in row x col y is 0, stores 0 in matrix[x][0] and
 	// matrix[0][y], since those two elements will be zeroes eventually, therefore there's no worry
 	// about losing the original element. Last check the first row and first column.
-	public void setZeroes(int[][] matrix) {
+	public void setZeroes_A(int[][] matrix) {
 		boolean zeroInFirstRow = false;
 		boolean zeroInFirstCol = false;
 
@@ -46,8 +45,8 @@ public class SetMatrixZeroes {
 		}
 	}
 
-	// Not accepte
-	public void setZeroes2(int[][] matrix) {
+	// Not accepted...
+	public void setZeroes_B(int[][] matrix) {
 		long bitmapOfRow = 0;
 		long bitmapOfCol = 0;
 		for(int i = 0; i < matrix.length; i++) {
