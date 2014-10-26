@@ -1,7 +1,7 @@
 package com.li.zil.leetcode;
 
 // http://leetcode.com/2010/04/searching-element-in-rotated-array.html
-public class SearchinRotatedSortedArray {
+public class SearchingRotatedSortedArray {
 	public int search(int[] A, int target) {
 		int l = 0;
 		int r = A.length - 1;
@@ -13,13 +13,16 @@ public class SearchinRotatedSortedArray {
 				return m;
 			}
 
+      // Left half is sorted...
 			if (A[l] <= A[m]) {
-				if (A[l] <= target && target < A[m]) {
+				if (A[l] <= target && A[m] > target) {
 					r = m - 1;
 				} else {
 					l = m + 1;
 				}
-			} else {
+			}
+      // Right half is sorted...
+      else {
 				if (A[m] < target && target <= A[r]) {
 					l = m + 1;
 				} else {
