@@ -1,4 +1,4 @@
-package com.li.zil.leetcode;
+package com.li.zil.leetcode.tree;
 
 import com.li.zil.leetcode.datastructure.TreeNode;
 

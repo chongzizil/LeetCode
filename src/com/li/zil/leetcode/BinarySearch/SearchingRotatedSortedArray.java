@@ -1,4 +1,4 @@
-package com.li.zil.leetcode;
+package com.li.zil.leetcode.BinarySearch;
 
 // http://leetcode.com/2010/04/searching-element-in-rotated-array.html
 public class SearchingRotatedSortedArray {
