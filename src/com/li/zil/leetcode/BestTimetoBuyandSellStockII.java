@@ -1,8 +1,5 @@
 package com.li.zil.leetcode;
 
-/**
- * Created by Zil on 2014/7/14.
- */
 public class BestTimetoBuyandSellStockII {
 	public int maxProfit(int[] prices) {
 		int maxProfit = 0;

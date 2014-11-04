@@ -15,7 +15,6 @@ public class DPSqrt {
 	private int solution() {
 		int max = (int) Math.sqrt(num);
 		int[][] f = new int[max + 1][num + 1];
-		int[][] s = new int[max + 1][num + 1];
 		List<Integer> res = new ArrayList<Integer>();
 
 		for (int i = 0; i <= max; i++) {
@@ -24,13 +23,12 @@ public class DPSqrt {
 					if (j == 0) {
 						f[i][j] = 0;
 					} else {
-						f[i][j] = Integer.MAX_VALUE;
+						f[i][j] = Integer.MAX_VALUE - num;
 					}
 				} else {
 					for (int k = 0; k * i * i <= j; k++) {
 						if (f[i][j] > f[i - 1][j - k * i * i] + k) {
 							f[i][j] = f[i - 1][j - k * i * i] + k;
-							s[i][j] = k;
 						}
 					}
 				}
@@ -43,6 +41,9 @@ public class DPSqrt {
 				res.add(i);
 				j -= i * i;
 			}
+      if (j == 0) {
+        break;
+      }
 		}
 
 		return f[max][num];
